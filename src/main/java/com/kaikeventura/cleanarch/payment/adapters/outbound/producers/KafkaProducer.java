@@ -3,7 +3,7 @@ package com.kaikeventura.cleanarch.payment.adapters.outbound.producers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kaikeventura.cleanarch.payment.application.domain.Payment;
-import com.kaikeventura.cleanarch.payment.application.ports.outbound.PaymentNotifier;
+import com.kaikeventura.cleanarch.payment.application.ports.outbound.PaymentNotifierPort;
 import lombok.AllArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
@@ -12,7 +12,7 @@ import java.util.Map;
 
 @Component
 @AllArgsConstructor
-public class KafkaProducer implements PaymentNotifier {
+public class KafkaProducer implements PaymentNotifierPort {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 

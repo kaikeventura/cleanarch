@@ -1,4 +1,4 @@
-package com.kaikeventura.cleanarch.payment.adapters.dtos;
+package com.kaikeventura.cleanarch.payment.adapters.infra.dtos;
 
 import lombok.Getter;
 import lombok.Setter;

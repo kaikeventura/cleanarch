@@ -1,6 +1,6 @@
 package com.kaikeventura.cleanarch.payment.adapters.inbound.controllers;
 
-import com.kaikeventura.cleanarch.payment.adapters.dtos.PaymentDTO;
+import com.kaikeventura.cleanarch.payment.adapters.infra.dtos.PaymentDTO;
 import com.kaikeventura.cleanarch.payment.application.domain.Payment;
 import com.kaikeventura.cleanarch.payment.application.ports.inbound.PaymentServicePort;
 import lombok.AllArgsConstructor;
