@@ -23,7 +23,7 @@ public class PaymentServiceImpl implements PaymentServicePort {
     @Override
     public Payment registerPayment(final Payment payment) {
         var registeredPayment = this.paymentRepositoryPort.save(payment);
-        paymentNotifierPort.notifyPayment(REGISTERED_PAYMENT_SUCCESS_TOPIC_NAME, payment);
+        paymentNotifierPort.notifyPayment(REGISTERED_PAYMENT_SUCCESS_TOPIC_NAME, registeredPayment);
 
         return registeredPayment;
     }

@@ -20,7 +20,7 @@ public class KafkaProducer implements PaymentNotifierPort {
     public void notifyPayment(final String topicName, final Payment payment) {
         try {
             var paymentJsonBody = this.buildSuccessPaymentJsonBody(payment);
-            this.publish(topicName, paymentJsonBody);
+//            this.publish(topicName, paymentJsonBody);
         } catch (JsonProcessingException e) {
             throw new RuntimeException();
         }

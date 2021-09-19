@@ -43,7 +43,7 @@ public class KafkaConfiguration {
     public ConsumerFactory<String, String> consumerFactory() {
         var configurationProperties = new HashMap<String, Object>();
         configurationProperties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServer);
-        configurationProperties.put(ConsumerConfig.GROUP_ID_CONFIG, "clean-arch");
+//        configurationProperties.put(ConsumerConfig.GROUP_ID_CONFIG, "clean-arch");
         configurationProperties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         configurationProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 
