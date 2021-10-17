@@ -1,1 +1,1 @@
-![hexagonal-arch.png](img.png)
+![hexagonal-arch.png](hexagonal-arch.png)
